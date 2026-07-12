@@ -1,0 +1,23 @@
+{
+  "name": "token-compressor",
+  "version": "1.0.0",
+  "description": "MV3 extension that compresses prompts client-side before they reach ChatGPT, Claude, or Copilot Chat.",
+  "private": true,
+  "scripts": {
+    "build": "node build.mjs",
+    "watch": "node build.mjs --watch",
+    "test": "node --test tests/",
+    "zip": "node build.mjs && node scripts/pack.mjs"
+  },
+  "dependencies": {
+    "@langchain/core": "^1.0.0",
+    "@langchain/classic": "^1.0.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.23.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT"
+}
